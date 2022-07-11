@@ -10,7 +10,6 @@ Content-Type: application/json
   "title": "Помидор",
   "description": "Лучшие помидоры на рынке"
 }
-
 ###
 
 # получение продуктов
@@ -49,12 +48,12 @@ Content-Type: application/json
   "address": "мой адрес не дом и не улица, мой адрес сегодня такой: www.ленинград-спб.ru3",
   "positions": [
     {
-      "product": 2,
+      "product": 3,
       "quantity": 250,
       "price": 120.50
     },
     {
-      "product": 3,
+      "product": 2,
       "quantity": 100,
       "price": 180
     }
@@ -64,18 +63,18 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе
-PATCH {{baseUrl}}/stocks/4/
+PATCH {{baseUrl}}/stocks/1/
 Content-Type: application/json
 
 {
   "positions": [
     {
-      "product": 2,
+      "product": 3,
       "quantity": 100,
       "price": 130.80
     },
     {
-      "product": 3,
+      "product": 2,
       "quantity": 243,
       "price": 145
     }
