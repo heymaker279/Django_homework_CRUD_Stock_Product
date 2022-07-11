@@ -74,9 +74,9 @@ Content-Type: application/json
       "price": 130.80
     },
     {
-      "product": 2,
-      "quantity": 243,
-      "price": 145
+      "product": 4,
+      "quantity": 248,
+      "price": 150
     }
   ]
 }
@@ -85,4 +85,15 @@ Content-Type: application/json
 
 # поиск складов, где есть определенный продукт
 GET {{baseUrl}}/stocks/?products=2
+Content-Type: application/json
+
+###
+# поиск продуктов по странице
+GET {{baseUrl}}/products/?page=2
+Content-Type: application/json
+
+###
+
+# поиск продуктов limitPagination
+GET {{baseUrl}}/products/?limit=2&offset=2
 Content-Type: application/json
